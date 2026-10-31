@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "FinanceApp",
+    "slug": "financeapp",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "scheme": "financeapp",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "resizeMode": "contain",
+      "backgroundColor": "#0A0E1A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.dj.financeapp"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0A0E1A"
+      },
+      "package": "com.dj.financeapp",
+      "versionCode": 1,
+      "permissions": []
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "@react-native-async-storage/async-storage",
+        { "StorageType": "insecure" }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    }
+  }
+}
